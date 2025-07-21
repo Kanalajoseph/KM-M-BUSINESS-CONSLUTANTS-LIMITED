@@ -1,81 +1,39 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Expert Business Consulting</title>
-  <link rel="stylesheet" href="styles.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="mediaquerry.css">
 </head>
 <body>
+    <header id="head">
+        <img src="assets/call.png" alt="">
+        <img src="assets/mail.png" alt="">
+        <img src="assets/location.png" alt="">
+    </header>
 
-  <header>
-    <div class="container">
-      <h1>Expert Business Consulting</h1>
-      <nav>
-        <ul>
-          <li><a href="#about">About</a></li>
-          <li><a href="#services">Services</a></li>
-          <li><a href="#testimonials">Testimonials</a></li>
-          <li><a href="#contact">Contact</a></li>
-        </ul>
-      </nav>
-    </div>
-  </header>
-
-  <section id="hero">
-    <div class="container">
-      <h2>Helping Businesses Succeed</h2>
-      <p>Professional strategy, growth planning, and consulting solutions for your company.</p>
-      <a href="#contact" class="btn">Get Started</a>
-    </div>
-  </section>
-
-  <section id="about">
-    <div class="container">
-      <h2>About Us</h2>
-      <p>We are a team of experienced business consultants who specialize in helping small and medium-sized enterprises grow and thrive. With over 10 years of experience, we deliver actionable strategies tailored to your needs.</p>
-    </div>
-  </section>
-
-  <section id="services">
-    <div class="container">
-      <h2>Our Services</h2>
-      <ul class="services-list">
-        <li>📈 Business Strategy</li>
-        <li>💼 Financial Consulting</li>
-        <li>🔗 Operations Improvement</li>
-        <li>🌐 Market Analysis</li>
-      </ul>
-    </div>
-  </section>
-
-  <section id="testimonials">
-    <div class="container">
-      <h2>Testimonials</h2>
-      <blockquote>"They helped us double our revenue in just 6 months!" — Client A</blockquote>
-      <blockquote>"Professional, insightful, and results-driven." — Client B</blockquote>
-    </div>
-  </section>
-
-  <section id="contact">
-    <div class="container">
-      <h2>Contact Us</h2>
-      <form id="contact-form">
-        <input type="text" placeholder="Your Name" required>
-        <input type="email" placeholder="Your Email" required>
-        <textarea placeholder="Your Message" required></textarea>
-        <button type="submit">Send Message</button>
-      </form>
-      <p id="form-response"></p>
-    </div>
-  </section>
-
-  <footer>
-    <div class="container">
-      <p>&copy; 2025 Expert Business Consulting. All rights reserved.</p>
-    </div>
-  </footer>
-
-  <script src="script.js"></script>
+    <nav class="navbar">
+        <div class="sidebar">
+            <ul>
+                <li onclick="hideSidebar()"><a href="#"><img src="assets/close.png" alt=""></a></li>
+                <li><a href="#banner" class="nav-link" data-target="banner">Home</a></li>
+                <li><a href="#about" class="nav-link" data-target="about">About</a></li>
+                <li><a href="#services" class="nav-link" data-target="services">Services</a></li>
+                <li><a href="#contact" class="nav-link" data-target="contact">Contact</a></li>
+            </ul>
+        </div>
+        <div class="navdiv">
+            <div class="logo"><a href="#">HM&M</a></div>
+            <ul>
+                <li class="hideOnMobile"><a href="#banner" class="nav-link" data-target="banner">Home</a></li>
+                <li class="hideOnMobile"><a href="#about" class="nav-link" data-target="about">About</a></li>
+                <li class="hideOnMobile"><a href="#services" class="nav-link" data-target="services">Services</a></li>
+                <li class="hideOnMobile"><a href="#contact" class="nav-link" data-target="contact">Contact</a></li>
+                <li class="menu-btn" onclick="showSidebar()"><a href="#"><img src="assets/menu.png" alt=""></a></li>
+            </ul>
+        </div>
+    </nav>
 </body>
 </html>
