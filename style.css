@@ -34,6 +34,7 @@ body {
     padding-left: 15px;
     padding-top: 15px;
     padding-bottom: 15px;
+    backdrop-filter: blur(10px);
 }
 
 .navdiv {
