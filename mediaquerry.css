@@ -12,3 +12,26 @@
     }
 
 }
+@media (max-width: 900px) {
+  #about {
+    flex-direction: column;
+    gap: 20px;
+    padding: 30px 10px;
+  }
+  .about-content {
+    max-width: 100%;
+    padding-top: 30px;
+    margin-left: 0;
+    text-align: start;
+  }
+  .about-image {
+    width: 100%;
+    justify-content: center;
+    margin-top: 20px;
+  }
+  .about-image img {
+    max-width: 90vw;
+    width: 100%;
+    height: auto;
+  }
+}
