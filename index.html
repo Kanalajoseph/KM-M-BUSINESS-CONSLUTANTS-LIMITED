@@ -46,6 +46,7 @@
         </div>
     </section>
 
+    <br>
     <section id="about">
         <div class="about-content">
             <h2> It Has Over 100 Associate Consultants On Its Database</h2>
@@ -59,9 +60,56 @@ to who have a combined vast experience in the private and public sector as well 
         <div class="about-image">
             <img src="assets/about.jpg" alt="">
         </div>
-        
     </section>
     <br>
+
+    <section id="about-2">
+        <div class="cards-row">
+            <div class="card">
+                <img src="assets/1.jpg" alt="">
+                <div class="card-content">
+                    <h3>Our Commitment</h3>
+                    <p data-full="K M & M BUSINESS CONSULTANTS LIMITED assembles highly skilled client focused teams, who are both dedicated 
+                    to working with you and are selected to match your requirements in every engagement we undertake. We understand 
+                    that you expect value for the money you pay. Our commitment is that we will provide the value you pay for.
+                    Draw on resources K M & M BUSINESS CONSULTANTS LIMITED has established a database of renowned consultants in different fields. This gives us a competitive edge in terms of meeting even the most challenging of assignments. 
+                    We have the resources expertise both locally and internationally to execute assignments.">
+                    K M & M BUSINESS CONSULTANTS LIMITED assembles highly skilled client focused teams, who are both dedicated 
+                    to working with you and are selected to match your requirements in every engagement we undertake...
+                </p>
+                <a href="javascript:void(0);" class="btn read-toggle">Read More</a>
+                </div>
+            </div>
+            <div class="card">
+                <img src="assets/2.jpg" alt="">
+                <div class="card-content">
+                    <h3>Strategic Analysis</h3>
+                    <p data-full="K M & M BUSINESS CONSULTANTS LIMITED understands the internal and external forces which impact your business. Here, our team looks at issues like your market, processes, core products and services and customer base. Business Performance Services, Human Resources Management, Financial Risk Management, Development Consultancy">
+                    K M & M BUSINESS CONSULTANTS LIMITED understands the internal and external forces which impact your business. Here, our team looks at issues like your market, processes, core products and services and customer base...
+                </p>
+                <a href="javascript:void(0);" class="btn read-toggle">Read More</a>
+                </div>
+            </div>
+            <div class="card">
+                <img src="assets/3.jpg" alt="">
+                <div class="card-content">
+                    <h3>Multi-Skilled Team</h3>
+                    <p data-full="We use the right people for the right job by building a team appropriately skilled to meet the needs of your business. 
+                        As business issues arise, we involve specialists. If we need to understand and address a unique process or industry 
+                        issue, K M & M BUSINESS CONSULTANTS LIMITED will find the right person with the knowledge to provide the right 
+                        solution.
+                        Our network of consultants enables us to ensure that our clients have access to blend of professionals who are well 
+                        versed with local conditions, and have access to skillful resources, no matter where they may be located. K M & M 
+                        BUSINESS CONSULTANTS LIMITED objectives are to provide consistent, high quality services to regional and local 
+                        clients as well as multi-national clients.">
+                    We use the right people for the right job by building a team appropriately skilled to meet the needs of your business...
+                </p>
+                <a href="javascript:void(0);" class="btn read-toggle">Read More</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
 <section id="contact" class="contact-section">
   <h2>Contact Us</h2>
 
@@ -83,5 +131,26 @@ to who have a combined vast experience in the private and public sector as well 
 
 
     <script src="script.js"></script>
+    <script>
+document.querySelectorAll('.read-toggle').forEach(function(btn) {
+    btn.addEventListener('click', function() {
+        var p = btn.previousElementSibling;
+        var full = p.getAttribute('data-full');
+        var minimal = p.getAttribute('data-minimal');
+        if (!minimal) {
+            // Save the current (minimal) text for toggling back
+            minimal = p.textContent.trim();
+            p.setAttribute('data-minimal', minimal);
+        }
+        if (btn.textContent === 'Read More') {
+            p.textContent = full;
+            btn.textContent = 'Read Less';
+        } else {
+            p.textContent = p.getAttribute('data-minimal');
+            btn.textContent = 'Read More';
+        }
+    });
+});
+</script>
 </body>
 </html>
