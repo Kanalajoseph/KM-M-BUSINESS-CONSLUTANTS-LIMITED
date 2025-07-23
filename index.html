@@ -27,14 +27,16 @@
             </ul>
         </div>
         <div class="navdiv">
-            <div class="logo"><a href="#">KM&M</a></div>
+            <div class="logo">
+                <a href="#"><img src="assets/logo.jpg" alt="" class="logo-img"></a>
+            </div>
             <ul>
                 <li class="hideOnMobile"><a href="#banner" class="nav-link" data-target="banner">Home</a></li>
                 <li class="hideOnMobile"><a href="#about" class="nav-link" data-target="about">About Us</a></li>
                 <li class="hideOnMobile"><a href="#services" class="nav-link" data-target="services">Our Services</a></li>
                 <li class="hideOnMobile"><a href="#testimonials" class="nav-link" data-target="testimonials">Testimonials</a></li>
                 <li class="hideOnMobile"><a href="#contact" class="nav-link" data-target="contact">Contact Us</a></li>
-                <li class="menu-btn" onclick="showSidebar()"><a href="#"><img src="assets/menu.png" alt=""></a></li>
+                <li class="menu-btn" onclick="showSidebar()"><a href="#"><img src="assets/menu.png" alt="" class="menu-img"></a></li>
             </ul>
         </div>
     </nav>
@@ -53,8 +55,8 @@
             <p>K M & M BUSINESS CONSULTANTS LIMITED is a systematic organization that provides advisory and management 
 consultant services. K M & M BUSINESS CONSULTANTS LIMITED is managed by Richard Kajokoto and Farai Kajoko
 to who have a combined vast experience in the private and public sector as well as non-governmental organizations.</p>
-            <a href="#about" class="btn">READ MORE</a>
-            <a href="#about" class="btn-1" >GET IN TOUCH</a>
+            <a href="#about" class="btn">Our Commitment</a>
+            <a href="#about" class="btn-1" >Our Services</a>
         </div>
 
         <div class="about-image">
@@ -62,6 +64,57 @@ to who have a combined vast experience in the private and public sector as well 
         </div>
     </section>
     <br>
+
+    <section id="services">
+    <div class="services-flex">
+        <div class="services-text">
+            <h2>Our Services</h2>
+            <p>
+                KM&M Business Consultants Limited provides a wide range of professional services to help organizations achieve their goals and maximize performance.
+            </p>
+            <ul>
+                <li>Human Resources Management</li>
+                <li>Financial Risk Management</li>
+                <li>Business Performance Services</li>
+                <li>Development Consultancy</li>
+            </ul>
+        </div>
+        <div class="carousel-container">
+            <button class="carousel-btn prev">&#8249;</button>
+            <div class="carousel-track">
+                <div class="card carousel-card">
+                    <img src="assets/1.jpg" alt="">
+                    <div class="card-content">
+                        <h1>Human Resources Management</h1>
+                        <p>Job Evaluations, Recruitment, Payroll, Training, HR Policies</p>
+                    </div>
+                </div>
+                <div class="card carousel-card">
+                    <img src="assets/2.1.jpg" alt="">
+                    <div class="card-content">
+                        <h1>Financial Risk Management</h1>
+                        <p>Tax Services, Construction & Procurement Audits, Fraud Detection</p>
+                    </div>
+                </div>
+                <div class="card carousel-card">
+                    <img src="assets/3.1.jpg" alt="">
+                    <div class="card-content">
+                        <h1>Business Performance Services</h1>
+                        <p>Business Process Reviews, Corporate Governance, ERP, Investment Advisory</p>
+                    </div>
+                </div>
+                <div class="card carousel-card">
+                    <img src="assets/4.jpg" alt="">
+                    <div class="card-content">
+                        <h1>Development Consultancy</h1>
+                        <p>Social Sector Development, Public Sector Reform, Feasibility Studies</p>
+                    </div>
+                </div>
+            </div>
+            <button class="carousel-btn next">&#8250;</button>
+        </div>
+    </div>
+</section>
 
 
 <section id="contact" class="contact-section">
@@ -85,6 +138,42 @@ to who have a combined vast experience in the private and public sector as well 
 
 
     <script src="script.js"></script>
+<script>
+document.addEventListener('DOMContentLoaded', function() {
+    const track = document.querySelector('.carousel-track');
+    const cards = Array.from(track.children);
+    const prevBtn = document.querySelector('.carousel-btn.prev');
+    const nextBtn = document.querySelector('.carousel-btn.next');
+    let currentIndex = 0;
+
+    function updateCarousel() {
+        track.style.transform = `translateX(-${currentIndex * 100}%)`;
+    }
+
+    prevBtn.addEventListener('click', function() {
+        currentIndex = (currentIndex === 0) ? cards.length - 1 : currentIndex - 1;
+        updateCarousel();
+    });
+
+    nextBtn.addEventListener('click', function() {
+        currentIndex = (currentIndex === cards.length - 1) ? 0 : currentIndex + 1;
+        updateCarousel();
+    });
+
+    // Optional: swipe support for mobile
+    let startX = 0;
+    track.addEventListener('touchstart', function(e) {
+        startX = e.touches[0].clientX;
+    });
+    track.addEventListener('touchend', function(e) {
+        let endX = e.changedTouches[0].clientX;
+        if (startX - endX > 50) {
+            nextBtn.click();
+        } else if (endX - startX > 50) {
+            prevBtn.click();
+        }
+    });
+});
 </script>
 </body>
 </html>
