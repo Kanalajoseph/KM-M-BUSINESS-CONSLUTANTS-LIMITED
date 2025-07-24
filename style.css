@@ -308,11 +308,92 @@ li a img {
 .whatsapp-link a:hover {
   text-decoration: underline;
 }
-.footer {   
-    background-color: #3574b4;
-    color: white;
+footer {
+    background: #1a1a1a;
+    color: #fff;
+    padding: 40px 20px;
+    font-family: Arial, sans-serif;
+}
+
+footer .footer-container {
+    max-width: 1200px;
+    margin: auto;
     text-align: center;
-    padding: 20px;
-    position: relative;
+}
+
+footer h3 {
+    margin: 0;
+    font-size: 24px;
+    color: #00bfa6;
+}
+
+footer p {
+    margin: 5px 0;
+    font-size: 14px;
+    color: #ccc;
+}
+
+footer .social-icons {
+    margin: 20px 0;
+}
+
+footer .social-icons a {
+    margin: 0 10px;
+    text-decoration: none;
+    color: #fff;
+    font-size: 20px;
+    transition: color 0.3s;
+}
+
+footer .social-icons a:hover {
+    color: #00bfa6;
+}
+
+footer .footer-links {
+    margin: 20px 0;
+}
+
+footer .footer-links a {
+    color: #ccc;
+    margin: 0 10px;
+    text-decoration: none;
+    font-size: 14px;
+    transition: color 0.3s;
+}
+
+footer .footer-links a:hover {
+    color: #00bfa6;
+}
+
+footer .footer-bottom {
+    margin-top: 20px;
+    font-size: 14px;
+    color: #aaa;
+}
+
+footer .footer-bottom a {
+    color: #00bfa6;
+    text-decoration: none;
+}
+
+footer .footer-bottom a:hover {
+    text-decoration: underline;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    footer .social-icons a {
+        font-size: 18px;
+        margin: 0 8px;
     }
+
+    footer h3 {
+        font-size: 20px;
+    }
+
+    footer .footer-links {
+        font-size: 13px;
+    }
+}
+
 
