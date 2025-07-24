@@ -304,13 +304,6 @@ li a img {
     overflow: hidden;
 }
 
-.service-img {
-    width: 100%;
-    height: auto;
-    border-radius: 10px;
-    margin-bottom: 20px;
-}
-
 .services-section h2 {
     text-align: center;
     font-size: 30px;
@@ -348,20 +341,14 @@ li a img {
     line-height: 1.6;
     }
 
-.service-box a {
-    display: inline-block;
-    margin-top: 15px;
-    padding: 10px 20px;
-    background-color: #80cc33;
-    color: #fff;
-    font-weight: 600;
-    text-decoration: none;
-    border-radius: 5px;
-    transition: background-color 0.3s ease;
-}
-.service-box a:hover {
-    background-color: #5e9e2a;
-}
+.service-box .btn {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+
+} 
+
+
 
 @media screen and (max-width: 600px) {
     .services-section h2 {
