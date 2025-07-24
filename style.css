@@ -370,6 +370,27 @@ li a img {
     margin-bottom: 20px;
 }
 
+.card-content .btn {
+    display: inline-block;
+    background-color: #80cc33;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+}
+
+.card-content .btn:hover {
+    background-color: #5e9e2a;
+}
+
+.card-content a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    font-size: 16px;
+}
+
 .carousel-container {
     position: relative;
     overflow: hidden;
