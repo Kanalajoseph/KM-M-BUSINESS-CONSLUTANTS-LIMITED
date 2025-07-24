@@ -296,6 +296,7 @@ li a img {
     text-align: start;
 }
 
+
 #services {
     background-color: #f9f9f9;
     margin-left: 50px;
@@ -308,6 +309,13 @@ li a img {
     max-width: 1200px;
     margin: 0 auto;
     padding: 60px 20px;
+}
+
+.service-img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    margin-bottom: 20px;
 }
 
 .services-section h2 {
@@ -368,6 +376,16 @@ li a img {
     }
 }   
 
+
+.swiper {
+  padding-bottom: 40px;
+}
+
+.swiper-slide {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
 #contact {
     background-color: #f4f4f4;
     padding: 50px 50px;
