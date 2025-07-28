@@ -8,6 +8,8 @@
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="mediaquerry.css">
+    <script src="/app.js"></script>
+
 </head>
 <body>
     <header id="head">
@@ -17,7 +19,7 @@
     </header>
 
     <section id="banner">
-            <nav class="navbar">
+    <nav class="navbar">
         <div class="sidebar">
             <ul>
                 <li onclick="hideSidebar()"><a href="#"><img src="assets/close.png" alt=""></a></li>
@@ -52,15 +54,13 @@
     <section id="about">
         <div class="about-content">
             <h2> It Has Over 100 Associate Consultants On Its Database</h2>
-            <p>K M & M BUSINESS CONSULTANTS LIMITED is a systematic organization that provides advisory and management 
-consultant services. K M & M BUSINESS CONSULTANTS LIMITED is managed by Richard Kajokoto and Farai Kajoko
-to who have a combined vast experience in the private and public sector as well as non-governmental organizations.</p>
-            <a href="#about" class="btn">Contact Us</a>
+            <p>K M & M BUSINESS CONSULTANTS LIMITED is a systematic organization that provides advisory and management consultant services. K M & M BUSINESS CONSULTANTS LIMITED is managed by Richard Kajokoto and Farai Kajokoto who have a combined vast experience in the private and public sector as well as non-governmental organizations.</p>
+            <a href="#about" class="btn">Read More</a>
             <a href="#about" class="btn-1" >Our Services</a>
         </div>
 
         <div class="about-image">
-            <img src="assets/about.jpg" alt="">
+            <img src="assets/logo.jpg" alt="">
         </div>
     </section>
     <br>
@@ -68,13 +68,7 @@ to who have a combined vast experience in the private and public sector as well 
     <section id="our-commitment" class="our-commitment">
         <h2>Our Commitment</h2>
         <p>
-            K M & M BUSINESS CONSULTANTS LIMITED assembles highly skilled client focused teams, who are both dedicated 
-to working with you and are selected to match your requirements in every engagement we undertake. We understand 
-that you expect value for the money you pay. Our commitment is that we will provide the value you pay for.
- Draw on resources K M & M BUSINESS CONSULTANTS LIMITED has established a database of renowned consult
-ants in different fields. This give us a competitive edge in terms of meeting even the most challenging of assignments. 
-We the resources expertise both locally and internationally to execute assignments.
-
+            K M & M BUSINESS CONSULTANTS LIMITED assembles highly skilled client focused teams, who are both dedicated to working with you and are selected to match your requirements in every engagement we undertake. We understand that you expect value for the money you pay. Our commitment is that we will provide the value you pay for. Draw on resources K M & M BUSINESS CONSULTANTS LIMITED has established a database of renowned consultants in different fields. This give us a competitive edge in terms of meeting even the most challenging of assignments.We the resources expertise both locally and internationally to execute assignments.
         </p>
     </section>
     <br>
@@ -149,49 +143,49 @@ We the resources expertise both locally and internationally to execute assignmen
     </section>
 <br>
 
-<section id="contact" class="contact-section">
-  <h2>Contact Us</h2>
-
-  <p class="description">
-            We'd be glad to hear from you. Please reach out to us using the information below or send us a message directly.
-        </p>
-
-<div class="contact-details">
-    <div class="detail-box">
-        <h3>Address</h3>
-        <p>Plot No. 25 Cedar Road, Woodlands, Lusaka, Zambia</p>
+<section id="contact" class="contact">
+    <div class="heading">
+        <h2>Contact Us</h2>
     </div>
-    <div class="detail-box">
-        <h3>Phone</h3>
-        <p>+260 774 453 005</p>
-    </div>
-    <div class="detail-box">
-        <h3>Email</h3>
-        <p><a href="#">kmandmbusinessconsultants1@gmail.com</a></p>
-    </div>
-</div>
+    
 
-    <p class="description">
+    <div class="contact-grid">
+        <div class="contact-box">
+            <p class="description">
+                Get in touch with us by following the infomation below
+            </p>
+            <h3>Address</h3>
+            <p>Plot No. 25 Cedar Road, Woodlands, Lusaka, Zambia</p>
+            <h3>Phone</h3>
+            <p>+260 774 453 005</p>
+            <h3>Email</h3>
+            <p><a href="#">kmandmbusinessconsultants1@gmail.com</a></p>
+        </div>
+
+        <div class="contact-box">
+            <p class="description">
                 Alternatively, you can fill out the form below to send us a message directly.
             </p>
+            <form class="form" action="https://formspree.io/f/manbenlz" method="POST">
+                <label for="email">Your Email:</label>
+                <input class="input" type="email" id="email" name="email" placeholder="example@gmail.com" required />
 
-  <form action="https://formspree.io/f/manbenlz" method="POST">
-    <label for="email">Your Email:</label>
-    <input type="email" id="email" name="email" placeholder="example@gmail.com" required />
+                <label for="message">Your Message:</label>
+                <textarea id="message" name="message" rows="5" placeholder="Type your message..." required></textarea>
 
-    <label for="message">Your Message:</label>
-    <textarea id="message" name="message" rows="5" placeholder="Type your message..." required></textarea>
+                <button class="btn" type="submit">Send</button>
+            </form>
+            <div class="whatsapp-link">
+                <p>Or message us directly on WhatsApp:</p>
+                <a href="https://wa.me/+260970106075?text=Hello%2C%20I%27m%20interested%20in%20your%20services" target="_blank">📱 Chat on WhatsApp</a>
+            </div>
+        </div>
 
-    <button type="submit">Send</button>
-  </form>
-  <div class="whatsapp-link">
-    <p>Or message us directly on WhatsApp:</p>
-    <a href="https://wa.me/+260970106075?text=Hello%2C%20I%27m%20interested%20in%20your%20services" target="_blank">📱 Chat on WhatsApp</a>
-  </div>
+    </div>
 </section>
 
 
-    <script src="script.js"></script>
+<script src="script.js"></script>
 <footer>
     <div class="footer-container">
         <h3>K M & M Business Consultants Limited</h3>
@@ -218,6 +212,7 @@ We the resources expertise both locally and internationally to execute assignmen
         </div>
     </div>
 </footer>
+
 
 
 </body>

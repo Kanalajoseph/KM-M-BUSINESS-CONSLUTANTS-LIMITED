@@ -354,6 +354,98 @@ li a img {
 } 
 
 #contact {
+    background-color: #f9f9f9;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.contact {
+    margin: 0 auto;
+    padding: 60px 20px;
+    overflow: hidden;
+}
+
+.heading h2{
+    text-align: center;
+    font-size: 30px;
+    margin-bottom: 50px;
+    color: #3574b4;
+}
+
+.contact-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 30px;
+}
+
+.contact-box {
+    background: #fff;
+    border-radius: 10px;
+    padding: 30px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.06);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.contact-box:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.08);
+    }
+
+.contact-box h3 {
+    text-align: start;
+    font-size: 24px;
+    color: #3574b4;
+    margin-top: 20px;
+}
+
+.form label {
+    font-weight: 600;
+    font-size: 24px;
+    color:#3574b4;
+
+}
+
+.form .input{
+    height: 40px;
+}
+
+.form input, textarea {
+    width: 100%;
+    background-color: #f9f9f9;
+    margin-top: 10px;
+    margin-bottom: 20px;
+    border-radius: 10px;
+}
+
+.form button {
+    width: 100%;
+}
+.form .btn{
+    font-size: 18px;
+    font-weight: 600;
+    height: 40px;
+    color: white;
+    background-color: #80cc33;
+    border: none;
+    border-radius: 8px;
+    transition: background-color 0.3s ease;
+}
+
+.form .btn:hover{
+    background-color: #5e9e2a;
+}
+.whatsapp-link{
+    margin-top: 10px;
+
+}
+.whatsapp-link a {
+    color: #80cc33;
+
+}
+
+
+/*
+#contact {
     background-color: #f4f4f4;
     padding: 50px 50px;
     text-align: center;
@@ -444,6 +536,9 @@ li a img {
 .whatsapp-link a:hover {
   text-decoration: underline;
 }
+
+*/
+
 footer {
     background: #1a1a1a;
     color: #fff;
